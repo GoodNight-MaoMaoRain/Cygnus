@@ -1,0 +1,10 @@
+Generic single-database configuration.
+
+命令:创建 alembic 目录,并生成一些初始配置文件
+alembic init alembic
+
+命令:会自动扫描你的数据库模型,并生成一个新的迁移脚本
+alembic revision --autogenerate -m "Initial migration"
+
+命令:会将数据库升级到最新版本
+alembic upgrade head
